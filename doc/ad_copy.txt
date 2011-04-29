@@ -1,0 +1,54 @@
+= Headline/Strapline
+Rails Dojo
+Introduction to Rails course 
+
+= Is Rails any good? / Hook
+
+Do you want to:
+   quickly create apps like Twitter, Basecamp & LinkedIn (all built on Rails)?
+   
+   work with the best worlds be developers and companies (Forward, Fred George)
+   
+   join the hottest job market? (Ruby job junt)
+
+I'm a freelance Rails developer and instructor since 2006 - I'll show you how.
+
+Ruby on Rails is a breakthrough in lowering the barriers of entry to 
+programming. Powerful web applications that formerly might have taken weeks or 
+months  to develop can be produced in a matter of days.
+
+Tim O'Reilly, Founder of O'Reilly Media
+
+
+= Is this course any good
+Description
+Syllabus
+Testimonial (Vito)
+What is the instructor to student ratio?
+How hands-on is it?
+
+= Who's giving this course
+Bio
+Mentoring/coaching
+
+
+= Is this course for me
+What level of programming experience should I have before taking this workshop?
+What do I need to bring?
+
+
+= Will I be able to create apps?
+Unique kata style learning
+Learn Rails in 6 hours
+Build app
+build apps faster than you ever have before
+=> [push down, ground not prepared] Learn the fastest way to build web apps
+
+
+= Call to action
+Money back guarantee
+1/2 tickets gone in 24hrs.
+Free re-sit
+Early bird discount
+Rails logo
+CIW logo
