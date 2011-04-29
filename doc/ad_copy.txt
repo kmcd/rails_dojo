@@ -30,12 +30,6 @@ All tuition is through live coding. Students are in a line facing a projector wi
 
 There are maximum of eight students per class.
 
-09:30 Welcome, Introduction & setup
-10:00 Build reservation system
-13:00 Complementary Lunch
-14:00 Build Twitter clone
-17:00 Wrap up
-
 = Who's giving this course
 
 My name is Keith McDonnell. I want to bring the fun & joy of Rails. I've been working for 10 years in the software industry. Since 2006, I've been a freelance Ruby on Rails developer and instructor. 
@@ -46,7 +40,7 @@ You can find my open source work on github and here's my CV (or resume).
 
 = What level of programming experience do I need?
 
-You'll need to understand html, css, and basic programming.
+You don’t need to have any prior experience with Ruby or Rails. You'll get the most out of the course if you understand HTML, CSS, and basic programming. 
 
 Before the course starts you'll receive preparatory material to help you get the most out of the course.
 
@@ -58,6 +52,17 @@ http://www.etcvenues.co.uk/venues/bonhill-house
 
 Direction
 http://www.etcvenues.co.uk/userfiles/file/BonhillHousebrochure.pdf
+
+= When is the course?
+
+The course runs on Saturday, 4th June from 09:30 - 17:00.
+
+09:30 Welcome, Introduction & setup
+10:00 Build reservation system
+13:00 Complementary Lunch
+14:00 Build Twitter clone
+17:00 Wrap up
+
 
 = What do I need to bring? 
 
@@ -78,10 +83,16 @@ Also, you'll join the some of the worlds best developers AND getting into the ho
 
  
 = Call to action
-Money back guarantee
-1/2 tickets gone in 24hrs.
-Free re-sit
-Early bird discount
+
+The next course runs on Saturday, June 4th from 09:30 to 17:00.
+
+Register with your email address here:
+
+Or contact me directly by email: keith@dancingtext.com or phone: 077 4955 7230.
+
+Sign up NOW for the Early bird discount.
+
+Students are welcome to re-take the course FREE any time in the next 3 months (pending availability).
+
 Rails logo
 CIW logo
-
