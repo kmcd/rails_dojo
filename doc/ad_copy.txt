@@ -1,17 +1,15 @@
 = Headline/Strapline
 Rails Dojo
-Introduction to Rails course 
+Introduction to Ruby on Rails
 
 = Is Rails any good? / Hook
 
 Do you want to:
-   quickly create apps like Twitter, Basecamp & LinkedIn (all built on Rails)?
-   
-   work with the best worlds be developers and companies (Forward, Fred George)
-   
+   create apps like Twitter, Basecamp & LinkedIn (all built on Rails)?
    join the hottest job market? (Ruby job junt)
+   work with the best worlds best developers and companies (Forward, Fred George) ?
 
-I'm a freelance Rails developer and instructor since 2006 - I'll show you how.
+Learn how to quickly turn your idea into a web app in my 1-day, intensive, live coding training course. 
 
 Ruby on Rails is a breakthrough in lowering the barriers of entry to 
 programming. Powerful web applications that formerly might have taken weeks or 
@@ -19,32 +17,62 @@ months  to develop can be produced in a matter of days.
 
 Tim O'Reilly, Founder of O'Reilly Media
 
+= Here's what you'll learn
 
-= Is this course any good
-Description
-Syllabus
+We'll build 2 full-featured apps from start to finish: a Twitter clone and a Reservation system.
+
+You'll learn how to:
+   Deploy your app to Heroku
+   Share your code Github
+   Automatically test your application
+   Easily navigate the ruby & rails documentation
+   
+This is intensive live coding session. All students are in a line facing a projector with my computer screen. I lead - you follow. Shout out with any questions.
+
+There are maximum of eight students per class.
+
+Timeline
+
+09:30 Welcome, Introduction & setup
+10:00 Build reservation system
+13:00 Lunch
+14:00 Build Twitter clone
+17:00 Wrap up
+
 Testimonial (Vito)
-What is the instructor to student ratio?
-How hands-on is it?
 
 = Who's giving this course
 Bio
 Mentoring/coaching
+I'm a freelance Ruby on Rails developer and instructor since 2006
+I want to bring the fun & joy of Rails.
 
+ * Get your questions answered on our alumni-only mailing list
+ * Find full-time, part-time, or contract developers for your project, or search for your dream job on our job board
+ 
+= What level of programming experience should I have before taking this workshop?
 
-= Is this course for me
-What level of programming experience should I have before taking this workshop?
-What do I need to bring?
+= What do I need to bring? 
+A few weeks before the course, we'll send out detailed instructions for installing everything you'll need. During the course, you'll get hands-on experience working through prepared exercises, and experimenting on your own, too.
+
+Before 
+* Receive prep material to help you get the most out of our time together
+* Get detailed laptop set-up instructions
 
 
 = Will I be able to create apps?
-Unique kata style learning
+# Get a jump start and get your questions answered so you can start building your own Rails applications with confidence.
+
+You'll come away from this course with the fundamental skills and hands-on experience necessary to build your own Rails applications: from idea to deployment.
+
+# Save time and frustration one days expert tutition.
+
 Learn Rails in 6 hours
-Build app
 build apps faster than you ever have before
 => [push down, ground not prepared] Learn the fastest way to build web apps
 
-
+* Get your questions answered on our alumni-only mailing list
+    
 = Call to action
 Money back guarantee
 1/2 tickets gone in 24hrs.
@@ -52,3 +80,17 @@ Free re-sit
 Early bird discount
 Rails logo
 CIW logo
+
+
+    
+What Should I Bring?
+Laptop: You'll be most productive on the laptop you use regularly. 
+
+
+Your Registration Includes
+ * A continental breakfast, beverages and snacks, and a hot lunch
+ * A binder with all the printed material
+ * All the example source code to refer back to later
+ * Internet connectivity and power during the Studio
+ * An invitation to our alumni-only mailing list for help after the Studio
+ * Discounts on future training
