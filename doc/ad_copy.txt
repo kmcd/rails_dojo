@@ -1,6 +1,6 @@
 = Headline/Strapline
 Rails Dojo
-Introduction to Ruby on Rails
+Introduction to Ruby on Rails course
 
 = Is Rails any good? / Hook
 

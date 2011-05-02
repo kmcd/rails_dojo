@@ -1,14 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Railsdojo</title>
+  <title>RailsDojo</title>
   <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
+  <style type="text/css">
+      body { 
+         font-family: verdana;
+         font-size: 12pt;
+         width: 570px;
+         margin: 1.6em auto;
+      }
+      
+      #footer { margin: 4em 0; }
+      
+      h1, h2, h3 { font-family: arial; }
+      h1 { font-size: 4em; margin: 0; color: rgb( 205, 10, 0); }
+      
+      .seal { position: absolute; right: 20px; }
+      .seal.rails { top: 150px; }
+      .seal.ciw   { top: 25px; }
+      /* body * { border: thin solid red; } */
+   </style>
 </head>
 <body>
+   <h1>Rails Dojo</h1>
+   
+   <img class="seal rails" src="https://susestudio.com/theme/logo/thumbnail/8e7886c2d44de9794b9b02b7742231a0" />
+   <img class="seal ciw" src="http://www.ciwcertified.com/_images/logos/logo_ciw_ci.gif" />
+      
+   <div id='pitch'>
+      <%= raw RedCloth.new(yield).to_html %>
+   </div>
+   
+   <div id='call_to_action'>
+      <%= raw RedCloth.new("
+h2. Register Now for Early Bird Discount
 
-<%= yield %>
+Saturday, 4 June, 09:30 - 17:00
 
+Price: &pound;295 inc. VAT
+
+Register with your email address:
+
+<form><input type='text'/><input type='submit' value='Register'></form>
+
+*Students are welcome to re-take the course FREE any time in the next 3 months* (pending availability).
+
+Contact keith@dancingtext.com or 077 4955 7230 for more information.
+      ").to_html %>
+   </div>
+   
+   <div id='footer'>
+      &copy; 2011 Dancing Text Ltd., Company number 07165774, 
+      Unit 36, 88-90 Hatton garden, London, ec1n 8pn, United Kingdom 
+   </div>
 </body>
 </html>
