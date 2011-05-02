@@ -18,16 +18,18 @@
       h1 { font-size: 4em; margin: 0; color: rgb( 205, 10, 0); }
       
       .seal { position: absolute; right: 20px; }
-      .seal.rails { top: 150px; }
-      .seal.ciw   { top: 25px; }
+      .seal.rails       { top: 150px; }
+      .seal.ciw         { top: 25px; }
+      .seal.workshop    { top: 325px; }
       /* body * { border: thin solid red; } */
    </style>
 </head>
 <body>
    <h1>Rails Dojo</h1>
    
-   <img class="seal rails" src="https://susestudio.com/theme/logo/thumbnail/8e7886c2d44de9794b9b02b7742231a0" />
-   <img class="seal ciw" src="http://www.ciwcertified.com/_images/logos/logo_ciw_ci.gif" />
+   <img class="seal rails" src="/images/ruby_on_rails_logo.jpg" />
+   <img class="seal ciw" src="/images/logo_ciw_ci.gif" />
+   <img class="seal workshop" src="/images/workshop.jpg" />
       
    <div id='pitch'>
       <%= raw RedCloth.new(yield).to_html %>
