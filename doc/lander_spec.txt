@@ -1,0 +1,40 @@
+Time     4 hours
+Budget   $50
+Deadline 48 hours.
+
+Here's the landing page I want you to improve: http://railsdojo.heroku.com
+
+Tasks:
+
+1. Typography
+
+Find an elegant font for body, similar to these sites:
+- Sans serif: http://workshops.thoughtbot.com/sections/8
+- Serif: http://37signals.com/
+
+Also, make h1 color identical to Rails image on right.
+
+2. O'Reilly quote
+
+Add speech bubbles to the quote "Ruby on Rails is a breakthrough ..."
+
+Similar to this quote: http://www.warrender-photography.com/forumphotos/ZZ662933D6.jpg
+
+3. Image border shadow
+
+Add a CSS image border shadow to the 3rd image on the right.
+
+4. Form
+
+- Make "Register Now for Early Bird Discount" stand out. Perhaps using a light 
+yellow background and outset box around the form.
+- Make the text box & button the width of the div and use a large font
+- The submit button should be red (the same color as the h1, rails image & call to action) 
+
+5. Call to action button
+
+Register Now (at the top of the page "If so, Register Now#") should be a large 
+button with a red background.
+
+This button is a link to the  "Register Now for Early Bird Discount" form at the
+bottom of the page.
