@@ -1,6 +1,6 @@
 Time     4 hours
 Budget   $50
-Deadline 48 hours.
+Deadline 48 hours. (Thursday 5th May)
 
 Here's the landing page I want you to improve: http://railsdojo.heroku.com
 
@@ -38,3 +38,5 @@ button with a red background.
 
 This button is a link to the  "Register Now for Early Bird Discount" form at the
 bottom of the page.
+
+Any questions contact keith@dancingtext.com .
