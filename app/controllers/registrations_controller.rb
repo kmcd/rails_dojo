@@ -5,7 +5,7 @@ class RegistrationsController < ApplicationController
     if @registration.valid?
       @registration.save
     else
-      flash[:error] = @registration.errors.on(:email)
+      flash[:error] = @registration.errors
       render :new
     end
   end

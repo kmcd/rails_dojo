@@ -1,9 +1,16 @@
 <% form_for Registration.new do |registration_form| %>
    <fieldset>
-      <legend>Register Now for Early Bird Discount</legend>
+      <legend>Register Now for early bird discount</legend>
       
-      <label>Register with your email address: <%= content_tag :b, flash[:error] %></label>
-      <%= registration_form.text_field :email, :class => "#{'error' unless flash[:error].blank? }" %>
+      <label>
+         <% if flash[:error] %>
+            <%= error_message_for flash[:error] %>
+         <% else %>
+            Register with your email address:</label>
+         <% end %>
+      </label>
+      
+      <%= registration_form.text_field :email %>
       <%= submit_tag 'Register' %>
       
       <p>Contact keith@dancingtext.com or 077 4955 7230 for more information.</p>

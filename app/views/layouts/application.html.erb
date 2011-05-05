@@ -21,12 +21,21 @@
       <%= yield %>
       
       <div class='quotes grid_4'>
-         <% 3.times do %>
-            <%= redcloth("
+         <%= redcloth("
 bq. Ruby on Rails is a breakthrough in lowering the barriers of entry to programming. Powerful web applications that formerly might have taken weeks or months to develop can be produced in a matter of days.
+
 ??Tim O'Reilly, Founder of O'Reilly Media??
-            ") %>
-         <% end %>
+         ") %>
+         <%= redcloth("
+bq. After researching the market, Ruby on Rails stood out as the best choice. We have been very happy with that decision. We will continue building on Rails and consider it a key business advantage.
+
+??Evan Williams, Creator of Blogger, ODEO, and Twitter??         
+         ") %>
+         <%= redcloth("
+bq. Before Ruby on Rails, web programming required a lot of verbiage, steps and time. Now, web designers and software engineers can develop a website much faster and more simply, enabling them to be more productive and effective in their work.
+
+??Bruce Perens, Open Source Luminary??
+         ") %>
       </div>
       
       <div class='seals grid_1'>
