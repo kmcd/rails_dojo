@@ -1,0 +1,21 @@
+.masthead {
+   margin-top: 1.6em;
+   margin-bottom: 1.6em;
+}
+
+h1 {
+   font-size: 4em;
+   color: red;
+}
+
+h3 {
+   margin-top: 1.6em;
+}
+
+.footer {
+   margin-top: 2.4em;
+}
+
+#new_registration legend {
+   font-size: 1.6em;
+}

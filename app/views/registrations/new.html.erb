@@ -1,0 +1,14 @@
+<% form_for Registration.new do |registration_form| %>
+   <fieldset>
+      <legend>Register Now for Early Bird Discount</legend>
+      
+      <label>Register with your email address: <%= content_tag :b, flash[:error] %></label>
+      <%= registration_form.text_field :email, :class => "#{'error' unless flash[:error].blank? }" %>
+      <%= submit_tag 'Register' %>
+      
+      <p>Contact keith@dancingtext.com or 077 4955 7230 for more information.</p>
+      
+      <p><b>You are welcome to re-take the course FREE any time in the next 3
+      months</b> (pending availability).</p>
+   </fieldset>
+<% end %>

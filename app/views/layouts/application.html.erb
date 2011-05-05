@@ -2,60 +2,45 @@
 <html>
 <head>
   <title>RailsDojo</title>
-  <%= stylesheet_link_tag :all %>
+  <%= stylesheet_link_tag 'text', 'reset', '960', :flutie, 'railsdojo' %>
   <%= csrf_meta_tag %>
-  <style type="text/css">
-      body { 
-         font-family: verdana;
-         font-size: 12pt;
-         width: 570px;
-         margin: 1.6em auto;
-      }
-      
-      #footer { margin: 4em 0; }
-      
-      h1, h2, h3 { font-family: arial; }
-      h1 { font-size: 4em; margin: 0; color: rgb( 205, 10, 0); }
-      
-      .seal { position: absolute; right: 20px; }
-      .seal.rails       { top: 150px; }
-      .seal.ciw         { top: 25px; }
-      .seal.workshop    { top: 325px; }
-      /* body * { border: thin solid red; } */
-   </style>
 </head>
-<body>
-   <h1>Rails Dojo</h1>
+<body class='container_12'>
+   <div class='masthead grid_12'>
+      <h1>Beginning Ruby on Rails</h1>
+      <h2>Saturday 4th June</h2>
+      <h2>Liverpool St. London</h2>
+      <h2>&pound;295 inc. vat</h2>
+   </div>
    
-   <img class="seal rails" src="/images/ruby_on_rails_logo.jpg" />
-   <img class="seal ciw" src="/images/logo_ciw_ci.gif" />
-   <img class="seal workshop" src="/images/workshop.jpg" />
+   <div class='grid_6 pitch'>
+      <%= raw RedCloth.new(File.open(Rails.root + 'app/views/registrations/pitch_copy.txt').read).to_html %>
+   </div>
+   
+   <div class='grid_6'>
+      <%= yield %>
       
-   <div id='pitch'>
-      <%= raw RedCloth.new(yield).to_html %>
+      <div class='quotes grid_4'>
+         <% 3.times do %>
+            <%= redcloth("
+bq. Ruby on Rails is a breakthrough in lowering the barriers of entry to programming. Powerful web applications that formerly might have taken weeks or months to develop can be produced in a matter of days.
+??Tim O'Reilly, Founder of O'Reilly Media??
+            ") %>
+         <% end %>
+      </div>
+      
+      <div class='seals grid_1'>
+         <img class="workshop" src="/images/workshop.jpg" />
+         <img class="ciw" src="/images/logo_ciw_ci.gif" />
+         <img class="rails" src="/images/ruby_on_rails_logo.jpg" />
+      </div>
    </div>
    
-   <div id='call_to_action'>
-      <%= raw RedCloth.new("
-h2. Register Now for Early Bird Discount
-
-Saturday, 4 June, 09:30 - 17:00
-
-Price: &pound;295 inc. VAT
-
-Register with your email address:
-
-<form><input type='text'/><input type='submit' value='Register'></form>
-
-*Students are welcome to re-take the course FREE any time in the next 3 months* (pending availability).
-
-Contact keith@dancingtext.com or 077 4955 7230 for more information.
-      ").to_html %>
-   </div>
+   <div class='clear'></div>
    
-   <div id='footer'>
-      &copy; 2011 Dancing Text Ltd., Company number 07165774, 
-      Unit 36, 88-90 Hatton garden, London, ec1n 8pn, United Kingdom 
+   <div class='footer grid_6'>
+      <p>&copy; 2011 Dancing Text Ltd., Company number 07165774</p>
+      <p>Unit 36, 88-90 Hatton garden, London, EC1N 8PN, United Kingdom</p>
    </div>
 </body>
 </html>
