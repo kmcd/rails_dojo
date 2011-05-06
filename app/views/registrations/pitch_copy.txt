@@ -3,11 +3,11 @@ Do you want to:
 * quickly turn your idea into a web app ?
 * save time and frustration learning Rails ?
 
-If so, register row for my *1-day, intensive, live-coding* training course &rarr;
+If so, register now for my *1-day, intensive, live-coding* training course &rarr;
 
 h3. Here's what you'll learn
 
-You'll build one full-featured Reservation system from start to finish. 
+You'll build one full-featured reservation system from start to finish. 
 
 All tuition is through *live coding*. Students are in a line facing a projector with my computer screen. I lead - you follow. Get your questions answered immmediately.
 
