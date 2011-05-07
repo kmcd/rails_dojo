@@ -1,5 +1,6 @@
 class RegistrationsController < ApplicationController
-  caches_page :new
+  # OPTIMIZE: find a way to cache without leaving a stale authenticity token
+  # caches_page :new
   
   def create
     @registration = Registration.new :email => params[:registration][:email]
