@@ -5,6 +5,6 @@ class Registration < ActiveRecord::Base
   after_create :deliver_signup_notification
 
   def deliver_signup_notification
-    Notifier.deliver_signup email
+    Notifications.deliver_signup email
   end
 end
