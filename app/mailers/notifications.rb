@@ -11,7 +11,7 @@ class Notifications < ActionMailer::Base
   def signup(email)
     @email = email
     
-    mail :to => "tom@pixelo.com", :cc => KMCD_EMAIL, 
+    mail :to => "tom@pixelo.co.uk", :cc => KMCD_EMAIL, 
       :subject => "New signup for RailsDojo.com"
   end
 end
