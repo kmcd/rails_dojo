@@ -13,8 +13,6 @@ class Notifications < ActionMailer::Base
       :subject => "New signup for RailsDojo.com"
   end
   
-  private
-  
   def kmcd_email
     "keith@dancingtext.com"
   end
