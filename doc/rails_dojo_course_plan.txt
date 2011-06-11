@@ -1,0 +1,116 @@
+09:30	What is Rails?
+09:35	Test setup (Ruby, Rails, Heroku, Github, )
+09:40	Creating a New Rails Project
+09:45	Hello, Rails!
+09:50	Getting Up and Running Quickly with Scaffolding
+09:55	Questions
+
+10:00	Active Record Validations and Callbacks
+      # The Object Life Cycle
+      # Validations Overview
+      * Why Use Validations?
+      * When Does Validation Happen?
+      * Skipping Validations
+10:05	Creating a Resource
+10:10	Running a Migration
+10:15	Adding a Link
+10:20	Working with Posts in the Browser
+10:25	The Model
+10:30	Adding Validation
+10:35	
+10:40 
+10:45	
+10:50	
+10:55	.                                 
+
+11:00	Active Record Associations
+      intro
+      The belongs_to Association
+11:05	
+11:10	The has_one Association
+11:15	
+11:20	The has_many Association
+11:25	
+11:30	The has_many :through Association
+11:35	    
+11:40	The has_one :through Association       
+11:45	
+11:50	The has_and_belongs_to_many Association
+11:55	
+
+12:00	Active Record Query Interface
+      - Retrieving Objects from the Database
+      - Retrieving a Single Object
+      - Retrieving Multiple Objects
+12:05 Pure String Conditions
+12:10 Array Conditions
+12:15 Hash Conditions
+12:20 Ordering
+12:25 Selecting Specific Fields
+12:30 Limit and Offset
+12:35 Dynamic Finders
+12:40 
+12:50 Calculations
+      - Average
+      - Minimum
+      - Maximum
+      - Sum/ Count
+12:55 
+                           
+13:00	 Lunch
+      
+14:00	Action Controller Overview
+      What Does a Controller Do?    
+      Methods and Actions
+14:05	Parameters
+14:10	Hash and Array Parameters
+14:15	Routing Parameters
+14:20	default_url_options
+14:25	Session
+         Accessing the Session
+14:30	The Flash
+14:35	Cookies
+14:40	Filters
+      After Filters and Around Filters
+      Other Ways to Use Filters
+      Verification                                         
+14:45 The Request and Response Objects             
+      The request Object
+      The response Object
+14:50 HTTP Authentications
+      HTTP Basic Authentication
+      HTTP Digest Authentication
+14:55 
+
+15:00 	Action View Form Helpers
+      Dealing with Basic Forms
+15:05 A Generic Search Form
+15:10 Multiple Hashes in Form Helper Calls
+15:15 Helpers for Generating Form Elements
+15:20	Other Helpers of Interest
+15:25	Dealing with Model Objects
+15:30	Model Object Helpers
+15:35	Binding a Form to an Object   
+15:40	Relying on Record Identification
+15:45	How do forms with PUT or DELETE methods work?
+15:50	Making Select Boxes with Ease
+15:55	
+
+16:00	The Select and Option Tags
+16:05	Select Boxes for Dealing with Models
+16:10	Option Tags from a Collection of Arbitrary Objects
+16:15	Time Zone and Country Select
+      Using Date and Time Form Helpers       
+16:20	Barebones Helpers
+16:25 Model Object Helpers    
+16:30	Common Options
+16:35 Individual Components
+16:40	  
+16:50   
+16:55	
+
+17:00	Wrap up
+      - book recommendations
+      - mailing list
+      - next steps
+
