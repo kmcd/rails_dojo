@@ -1,0 +1,155 @@
+09:30 who am I
+09:35 about this course, demo app
+09:40 setup rails
+09:45 download docs
+09:50 setup heroku, github
+09:55 
+
+10:00 intro to rails
+      Rails is a web application development framework written in the Ruby language. It is designed to make programming web applications easier by making assumptions about what every developer needs to get started. It allows you to write less code while accomplishing more than many other languages and frameworks
+      
+10:05 rails generators, rake tasks
+
+      rails new ~/Code/Ruby/weblog
+      This generates a skeletal Rails installation in ~/Code/Ruby/weblog.
+      See the README in the newly created application to get going.
+
+      rails generate
+      rake -T
+    
+10:10 create 1st scaffold
+      scaffold hotel
+      rake db:migrate
+      
+10:15 explain file layout
+
+      db/ 	Shows your current database schema, as well as the database migrations. You’ll learn about migrations shortly.
+      public/ 	The only folder seen to the world as-is. This is where your images, javascript, stylesheets (CSS), and other static files go.
+      
+      app/models
+      app/controllers
+      app/views
+
+10:20 explain MVC       
+      A model represents the information (data) of the application and the rules to manipulate that data. In the case of Rails, models are primarily used for managing the rules of interaction with a corresponding database table. In most cases, one table in your database will correspond to one model in your application. The bulk of your application’s business logic will be concentrated in the models.
+      
+      Views represent the user interface of your application. In Rails, views are often HTML files with embedded Ruby code that perform tasks related solely to the presentation of the data. Views handle the job of providing data to the web browser or other tool that is used to make requests from your application.     
+      
+      Controllers provide the “glue” between models and views. In Rails, controllers are responsible for processing the incoming requests from the web browser, interrogating the models for data, and passing that data on to the views for presentation.
+      
+10:25 
+
+10:30 explain migration    
+      Migrations are a convenient way for you to alter your database in a structured and organized manner. 
+      
+      guides migrations
+      rdoc column for datatypes
+      
+10:35 scaffold reservation
+10:40 scaffold guest
+10:45 scaffold room
+10:50 scaffold occupancy
+10:55 
+      
+11:00 intro to validations (also console)
+
+      During the normal operation of a Rails application, objects may be created, updated, and destroyed. Active Record provides hooks into this object life cycle so that you can control your application and its data.
+
+      Validations are used to ensure that only valid data is saved into your database. For example, it may be important to your application to ensure that every user provides a valid email address and mailing address. 
+   
+      presence
+      app/models/guest.rb:  validates_presence_of :name, :passport
+      app/models/reservation.rb:  validates_presence_of :occupants
+      app/models/room.rb:  validates_presence_of :number, :price
+      
+      uniqueness/numericality
+      app/models/room.rb:  validates_uniqueness_of :number
+      app/models/room.rb:  validates_numericality_of :price
+
+11:05 validates_acceptance_of
+      validates_confirmation_of
+11:10 validates_exclusion_of
+      validates_inclusion_of
+11:15 validates_numericality_of
+      validates_length_of
+11:20 validates_format_of
+11:25 
+
+11:30 Working with Validation Errors
+11:35 Displaying Validation Errors in the View
+11:40 Common Validation Options
+      Conditional Validation
+11:45 Creating Custom Validation Methods
+      start & end_date
+11:50
+11:55 
+
+      [callbacks?]
+
+12:00 intro to associations
+12:05 app/models/reservation.rb:  belongs_to :room
+12:10 app/models/occupancy.rb:  belongs_to :reservation                  
+12:15 app/models/occupancy.rb:  belongs_to :room
+12:20 
+12:25 
+      
+12:30 app/models/occupancy.rb:  has_many :guests
+12:35 app/models/room.rb:  has_many :reservations
+12:40 app/models/room.rb:  has_many :occupancies
+12:50 
+12:55 
+      
+13:00 
+
+14:00 Intro to queries
+      Active Record will perform queries on the database for you and is compatible with most database systems (MySQL, PostgreSQL and SQLite to name a few). Regardless of which database system you’re using, the Active Record method format will always be the same.
+      
+14:05 Retrieving Objects from the Database
+                      
+      
+14:10 Conditions (inc SQL)
+      console examples
+14:15 scopes/Dynamic Finders
+14:20 Calculations
+14:25 
+      
+14:30 search for availability
+14:35 rails g controller availability -p
+14:40 
+14:45 
+14:50 
+14:55 
+      
+15:00 Intro to controllers
+      
+15:05 Explain routes file
+15:10 create /admin namespace
+15:15 filters
+15:20 require a password to login
+15:25 
+      
+15:30 views, view helpers, form helpers
+      create public pages
+15:35 
+15:40 
+15:45 
+15:50 
+15:55 
+      
+16:00 Intro to ajax
+16:05 add more guests to reservation form
+16:10 
+16:15 
+16:20 
+16:25 
+      
+16:30 Uploading images with paperclip
+      finding plugins/gems
+16:35 Add room images
+16:40 
+16:50 
+16:55 Wrap up
+      what we just did
+      getting help online
+      finding ruby jobs/work
+      

@@ -1,0 +1,32 @@
+09:30 who am I
+      
+      Welcome!
+      
+      Work experience How I started rails
+      Hi! I'm Keith McDonnell, a freelance Ruby on Rails developer based in Woodbridge, UK.
+      
+      Work history since 1999
+         Localistaion 
+         Symantec, IBM
+         Rails contractor 4 start ups (Plazes, Careermee, WLD)
+         
+      Comp sci
+      
+      Intro students
+      
+09:35 What you'll learn
+      Schedule
+      Demo app
+      Health & safety
+      
+09:40 setup dev env
+      ruby rails
+
+09:45 setup prod env
+      github
+      heroku
+
+09:50 view docs
+      download bundle view guides view rdoc
+
+09:55

@@ -1,0 +1,36 @@
+15:00 Intro to controllers
+      Explain routes file
+15:05 filters
+      explination
+      example
+      
+15:10 require a password to login
+      authenticate_or_request_with_http_digest              
+      USERS = { "hotel-admin" => "super-secret" }
+      
+      private
+      
+      def authenticate
+       authenticate_or_request_with_http_digest do |username|
+         USERS[username]
+       end                           
+      end
+        
+15:15 Hotel#password
+      migration
+      scaffold
+
+15:20 Public pages
+15:25 
+
+15:30 Sending email
+      [Forgot password -> locked out!]
+      
+      Walkthrough to Generating a Mailer
+15:35 Mailer Views
+15:40 Action Mailer Layouts
+      Generating URLs in Action Mailer Views
+15:45 Test on heroku
+15:50 
+15:55               
+

@@ -1,0 +1,290 @@
+10:00 intro to rails
+      Rails is a web application development framework written in the Ruby
+      language. It is designed to make programming web applications easier by
+      making assumptions about what every developer needs to get started. It
+      allows you to write less code while accomplishing more than many other
+      languages and frameworks
+
+10:05 rails generators, rake tasks
+
+      rails new ~/Code/Ruby/weblog This generates a skeletal Rails installation
+      in ~/Code/Ruby/weblog.  See the README in the newly created application
+      to get going.
+
+      rails generate rake -T
+
+10:10 create 1st scaffold
+      scaffold hotel rake db:migrate
+
+10:15 explain file layout
+
+      db/	Shows your current database schema, as well as the database
+      migrations. You’ll learn about migrations shortly.  public/   The only
+      folder seen to the world as-is. This is where your images, javascript,
+      stylesheets (CSS), and other static files go.
+
+      app/models app/controllers app/views
+
+10:20 explain MVC
+      A model represents the information (data) of the application and the
+      rules to manipulate that data. In the case of Rails, models are primarily
+      used for managing the rules of interaction with a corresponding database
+      table. In most cases, one table in your database will correspond to one
+      model in your application. The bulk of your application’s business
+      logic will be concentrated in the models.
+
+      Views represent the user interface of your application. In Rails,
+      views are often HTML files with embedded Ruby code that perform tasks
+      related solely to the presentation of the data. Views handle the job
+      of providing data to the web browser or other tool that is used to
+      make requests from your application.
+
+      Controllers provide the “glue” between models and views. In Rails,
+      controllers are responsible for processing the incoming requests from
+      the web browser, interrogating the models for data, and passing that
+      data on to the views for presentation.
+
+10:25 explain migration
+      Migrations are a convenient way for you to alter your database in a
+      structured and organized manner.                   
+      
+      guides migrations rdoc column for datatypes
+
+10:30 Intro to Ruby
+      
+      If you are familiar
+      with a language like Java, JavaScript, PHP, Perl or Python, you will find Ruby
+      pretty easy to pick up.
+
+      Everything you manipulate in Ruby is an object, and the results of those
+manipulations are themselves objects.
+When you write object-oriented code, you’re normally looking to model con-
+cepts from the real world. Typically during this modeling process you’ll dis-
+cover categories of things that need to be represented. In an online store, the
+concept of a line item could be such a category. In Ruby, you’d define a class to
+represent each of these categories. You then use this class as a kind of factory
+that generates objects—instances of that class. An object is a combination of
+state (for example, the quantity and the product id) and methods that use that
+state (perhaps a method to calculate the line item’s total cost).
+
+   "dave".length
+
+   Parentheses are generally optional
+
+   Local variables, method parameters, and method names should all start with
+a lowercase letter or with an underscore: order, line_item, and xr2000 are all
+valid. Instance variables (which we talk about on page 65) begin with an “at”
+sign (@), such as @quantity and @product_id. The Ruby convention is to use
+underscores to separate words in a multiword method or variable name (so
+line_item is preferable to lineItem).
+Class names, module names, and constants must start with an uppercase
+letter. By convention they use capitalization, rather than underscores, to dis-
+tinguish the start of words within the name. Class names look like Object,
+PurchaseOrder, and LineItem.
+Rails uses symbols to identify things. In particular, it uses them as keys when
+naming method parameters and looking things up in hashes. For example:
+redirect_to :action => "edit", :id => params[:id]
+As you can see, a symbol looks like a variable name, but it’s prefixed with a
+colon.
+
+
+Let’s write a method that returns a cheery, personalized greeting. We’ll invoke
+that method a couple of times:
+def say_goodnight(name)
+result = 'Good night, ' + name
+return result
+end
+# Time for bed...
+puts say_goodnight('Mary-Ellen')
+puts say_goodnight('John-Boy')
+Having defined the method, we call it twice. In both cases, we pass the result
+to the method puts, which outputs to the console its argument followed by a
+newline (moving on to the next line of output).
+You don’t need a semicolon at the end of a statement as long as you put each
+statement on a separate line. Ruby comments start with a # character and
+run to the end of the line. Indentation is not significant (but two-character
+indentation is the de facto Ruby standard).
+
+
+10:35 Data types
+ 
+Strings
+
+Ruby performs expression interpolation in double-quoted strings. In
+the string, the sequence #{expression } is replaced by the value of expression.
+We could use this to rewrite our previous method:
+def say_goodnight(name)
+"Good night, #{name.capitalize}"
+end
+puts say_goodnight('pa')
+
+Arrays
+
+Arrays and Hashes
+Ruby’s arrays and hashes are indexed collections. Both store collections of
+objects, accessible using a key. With arrays, the key is an integer, whereas
+hashes support any object as a key. Both arrays and hashes grow as needed
+to hold new elements. It’s more efficient to access array elements, but hashes
+provide more flexibility. Any particular array or hash can hold objects of dif-
+fering types; you can have an array containing an integer, a string, and a
+floating-point number, for example.
+
+a = [ 1, 'cat', 3.14 ]
+a[0]
+a[2] = nil
+
+The method << is commonly used with arrays. It appends a value to its receiver.
+ages = []
+for person in @people
+ages << person.age
+end
+Ruby has a shortcut for creating an array of words:
+a = [ 'ant', 'bee', 'cat', 'dog', 'elk' ]
+# this is the same:
+a = %w{ ant bee cat dog elk }
+Ruby hashes are similar to arrays. A hash literal uses braces rather than
+square brackets. The literal must supply two objects for every entry: one for
+the key, the other for the value. For example, you may want to map musical
+instruments to their orchestral sections:
+inst_section
+:cello
+:clarinet
+:drum
+:oboe
+:trumpet
+:violin
+}
+= {
+=> 'string',
+=> 'woodwind',
+=> 'percussion',
+=> 'woodwind',
+=> 'brass',
+=> 'string'
+The thing to the left of the => is the key, and that on the right is the corre-
+sponding value. Keys in a particular hash must be unique—you can’t have
+two entries for :drum. The keys and values in a hash can be arbitrary objects—
+you can have hashes where the values are arrays, other hashes, and so on.
+In Rails, hashes typically use symbols as keys. Many Rails hashes have been
+subtly modified so that you can use either a string or a symbol interchangeably
+as a key when inserting and looking up values.
+Hashes are indexed using the same square bracket notation as arrays:
+inst_section[:oboe]
+inst_section[:cello]
+inst_section[:bassoon]
+#=> 'woodwind'
+#=> 'string'
+#=> nil
+
+You can pass hashes as parameters on method calls. Ruby allows you to omit
+the braces, but only if the hash is the last parameter of the call. Rails makes
+extensive use of this feature.
+
+Regular Expressions
+A regular expression lets you specify a pattern of characters to be matched in
+a string. In Ruby, you typically create a regular expression by writing /pattern/
+or %r{pattern}.
+
+if line =~ /P(erl|ython)/
+puts "There seems to be another scripting language here"
+end
+You can specify repetition within patterns. /ab+c/ matches a string containing
+an a followed by one or more b’s, followed by a c. Change the plus to an
+asterisk, and /ab*c/ creates a regular expression that matches one a, zero or
+more b’s, and one c.
+Backward slashes start special sequences, most notably \d matches any digit,
+\s matches any whitespace character, and \w matches any alphanumeric ("word")
+character.
+Ruby’s regular expressions are a deep and complex subject;
+
+10:40 Logic
+
+make decisions which affect the repetition and order of execution
+
+if count > 10
+puts "Try again"
+elsif tries == 3
+puts "You lose"
+else
+puts "Enter a number"
+end
+
+Similarly, while statements are terminated with end:
+while weight < 100 and num_pallets <= 30
+pallet = next_pallet()
+weight += pallet.weight
+num_pallets += 1
+end
+
+Ruby statement modifiers are a useful shortcut if the body of an if or while
+statement is just a single expression. Simply write the expression, followed by
+if or while and the condition:
+puts "Danger, Will Robinson" if radiation > 3000
+distance = distance * 1.2 while distance < 100
+While if statements are fairly common in Ruby applications, newcomers to the
+Ruby language are often surprised to find that looping constructs are rarely
+used. Blocks and iterators often take their place.
+
+Code blocks are just chunks of code between braces or between do...end. A
+common convention is that people use braces for single-line blocks and do/end
+for multiline blocks:
+
+animals = %w( ant bee cat dog elk )
+animals.each {|animal| puts animal }
+
+animals = %w( ant bee cat dog elk )
+animals.each {|animal| puts animal }
+
+3.times { print "Ho! " }
+3.times {|number| print "Ho! #{number}" }
+
+The & prefix operator will allow a method to capture a passed block as a named
+parameter.
+
+def wrap &b
+   print "Santa says: "
+   3.times(&b)
+   print "\n"
+end
+wrap { print "Ho! " }
+
+10:45 Organising Structures
+
+class Greeter
+def initialize(name)
+@name = name
+
+end
+def name
+@name
+end
+def name=(new_name)
+@name = new_name
+end
+end
+g = Greeter.new("Barney")
+#=> Barney
+puts g.name
+g.name = "Betty"
+puts g.name
+#=> Betty
+Ruby provides convenience methods that write these accessor methods for you
+(which is great news for folks tired of writing all those getters and setters):
+class Greeter
+attr_accessor
+attr_reader
+attr_writer
+:name
+:greeting
+:age
+
+Modules serve two purposes. First, they act as a namespace, letting you define
+methods whose names will not clash with those defined elsewhere. Second,
+they allow you to share functionality between classes—if a class mixes in a
+module, that module’s instance methods become available as if they had been
+defined in the class.
+
+
+10:50 Idioms
+
+10:55

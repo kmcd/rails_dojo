@@ -1,0 +1,45 @@
+11:00 intro to validations (also console)
+
+      During the normal operation of a Rails application, objects may be
+      created, updated, and destroyed. Active Record provides hooks into this
+      object life cycle so that you can control your application and its data.
+
+      Validations are used to ensure that only valid data is saved into your
+      database. For example, it may be important to your application to ensure
+      that every user provides a valid email address and mailing address.
+
+      presence app/models/guest.rb:  validates_presence_of :name, :passport
+      app/models/reservation.rb:  validates_presence_of :occupants
+      app/models/room.rb:  validates_presence_of :number, :price
+
+      uniqueness/numericality app/models/room.rb:  validates_uniqueness_of
+      :number app/models/room.rb:  validates_numericality_of :price
+      
+      [move these to appropriate sections]
+      scaffold reservation
+      scaffold guest 
+      scaffold room 
+      scaffold occupancy
+      
+      [intro to form helpers]
+      
+11:05 validates_acceptance_of
+11:10 validates_confirmation_of
+      validates_exclusion_of
+      validates_inclusion_of
+      validates_numericality_of
+      validates_length_of
+      validates_format_of      
+      
+11:15 
+11:20 
+11:25
+
+11:30 Working with Validation Errors 
+11:35 Displaying Validation Errors in the View 
+11:40 Common Validation Options
+      Conditional Validation
+11:45 Creating Custom Validation Methods
+      start & end_date
+11:50 Callbacks
+11:55

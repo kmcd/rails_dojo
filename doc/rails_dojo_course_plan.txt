@@ -1,41 +1,50 @@
 09:30	What is Rails?
-09:35	Test setup (Ruby, Rails, Heroku, Github, )
-09:40	Creating a New Rails Project
-09:45	Hello, Rails!
-09:50	Getting Up and Running Quickly with Scaffolding
-09:55	Questions
-
+09:35	Test setup (Ruby, Rails, Heroku, Github)
+      Creating a New Rails Project
+      Hello, Rails!
+09:40	rails new
+      rails server
+      rails generate
+      rails console
+      rails dbconsole
+      rake -T
+      
+09:45 Project: Hotel reservation system
+      Home page
+      edit index.html                         
+      
+09:50 Getting Up and Running Quickly with Scaffolding
+09:55 
+      
 10:00	Active Record Validations and Callbacks
-      # The Object Life Cycle
-      # Validations Overview
-      * Why Use Validations?
-      * When Does Validation Happen?
-      * Skipping Validations
+      The Object Life Cycle
+      Validations Overview
+      Why Use Validations?
+      When Does Validation Happen?
+      Skipping Validations
 10:05	Creating a Resource
 10:10	Running a Migration
 10:15	Adding a Link
 10:20	Working with Posts in the Browser
-10:25	The Model
-10:30	Adding Validation
+10:25	
+10:30	The Model
 10:35	
-10:40 
+10:40 Adding Validations
 10:45	
 10:50	
-10:55	.                                 
+10:55	
 
 11:00	Active Record Associations
-      intro
-      The belongs_to Association
-11:05	
-11:10	The has_one Association
-11:15	
-11:20	The has_many Association
-11:25	
-11:30	The has_many :through Association
-11:35	    
-11:40	The has_one :through Association       
-11:45	
-11:50	The has_and_belongs_to_many Association
+11:05	The belongs_to Association
+11:10	
+11:15	The has_one Association
+11:20	
+11:25	The has_many Association
+11:30	
+11:35	The has_many / has_one :through Association
+11:40 
+11:45	The has_and_belongs_to_many Association
+11:50	
 11:55	
 
 12:00	Active Record Query Interface
@@ -46,18 +55,17 @@
 12:10 Array Conditions
 12:15 Hash Conditions
 12:20 Ordering
-12:25 Selecting Specific Fields
+12:25 
 12:30 Limit and Offset
 12:35 Dynamic Finders
-12:40 
-12:50 Calculations
-      - Average
+12:40 Calculations
+12:50  Average
       - Minimum
       - Maximum
       - Sum/ Count
-12:55 
-                           
-13:00	 Lunch
+12:55  
+
+13:00	Lunch
       
 14:00	Action Controller Overview
       What Does a Controller Do?    
@@ -78,9 +86,23 @@
       The request Object
       The response Object
 14:50 HTTP Authentications
-      HTTP Basic Authentication
+      HTTP Basic Authentication                      
       HTTP Digest Authentication
 14:55 
+
+      The Purpose of the Rails Router
+      Connecting URLs to Code
+      Generating Paths and URLs from Code
+      Resource Routing: the Rails Default
+      Resources on the Web
+      CRUD, Verbs, and Actions
+      Paths and URLs
+      Defining Multiple Resources at the Same Time
+      Singular Resources
+      Controller Namespaces and Routing
+      Nested Resources
+      Creating Paths and URLs From Objects
+      Adding More RESTful Actions
 
 15:00 	Action View Form Helpers
       Dealing with Basic Forms
@@ -94,19 +116,26 @@
 15:40	Relying on Record Identification
 15:45	How do forms with PUT or DELETE methods work?
 15:50	Making Select Boxes with Ease
-15:55	
-
-16:00	The Select and Option Tags
-16:05	Select Boxes for Dealing with Models
-16:10	Option Tags from a Collection of Arbitrary Objects
-16:15	Time Zone and Country Select
+15:55	The Select and Option Tags
+      Select Boxes for Dealing with Models
+      Option Tags from a Collection of Arbitrary Objects
+      Time Zone and Country Select
       Using Date and Time Form Helpers       
-16:20	Barebones Helpers
-16:25 Model Object Helpers    
-16:30	Common Options
-16:35 Individual Components
-16:40	  
-16:50   
+      Barebones Helpers
+      Model Object Helpers    
+      Common Options
+      Individual Components
+
+16:00	Views, Partials, AJAX
+16:05	Rendering by Default: Convention Over Configuration in Action
+16:10	Using render
+16:15	Using redirect_to
+16:20	Understanding yield 
+16:25 Using content_for
+16:30	Using Partials
+16:35 AJAX
+16:40	
+16:50 
 16:55	
 
 17:00	Wrap up

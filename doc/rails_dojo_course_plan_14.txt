@@ -1,0 +1,20 @@
+14:00 Intro to queries
+      Active Record will perform queries on the database for you and is
+      compatible with most database systems (MySQL, PostgreSQL and SQLite
+      to name a few). Regardless of which database system you’re using,
+      the Active Record method format will always be the same.
+
+14:05 Retrieving Objects from the Database
+14:10 Conditions (inc SQL)
+      console examples
+14:15 scopes/Dynamic Finders 
+14:20 Calculations
+14:25
+
+14:30 search for availability
+14:35 rails g controller availability -p 
+14:40
+14:45 
+14:50 
+14:55
+

@@ -1,0 +1,23 @@
+12:00 intro to associations 
+      In Rails, an association is a connection between two Active Record models. Associations are implemented using macro-style calls, so that you can declaratively add features to your models. For example, by declaring that one model belongs_to another, you instruct Rails to maintain Primary Key–Foreign Key information between instances of the two models, and you also get a number of utility methods added to your model. Rails supports six types of association:
+
+      A belongs_to association sets up a one-to-one connection with another model, such that each instance of the declaring model “belongs to” one instance of the other model. 
+       
+      app/models/reservation.rb:  belongs_to :room 
+      app/models/occupancy.rb:  belongs_to :reservation
+      app/models/occupancy.rb:  belongs_to :room
+      
+12:05 has_one
+12:10 ONE FK on other table
+12:15 has_many
+12:20 MANY FK's on other table
+      app/models/occupancy.rb:  has_many :guests has_many :reservations
+      app/models/room.rb:  has_many :occupancies                       
+12:25 
+      
+12:30 has_many through
+12:35 
+12:40 habtm
+12:44 
+12:50 
+12:55 
