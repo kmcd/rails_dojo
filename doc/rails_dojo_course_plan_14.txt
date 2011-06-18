@@ -1,20 +1,70 @@
 14:00 Intro to queries
+
+      --> How do we search for information in the database?
+      find a record
+      issue a query based on data type, eg hair color
+
       Active Record will perform queries on the database for you and is
       compatible with most database systems (MySQL, PostgreSQL and SQLite
       to name a few). Regardless of which database system you’re using,
       the Active Record method format will always be the same.
 
-14:05 Retrieving Objects from the Database
-14:10 Conditions (inc SQL)
-      console examples
-14:15 scopes/Dynamic Finders 
-14:20 Calculations
+14:05 Retrieving Objects from the Database 
+      find(1)
+      find(2,3)
+      first 
+      last
+      find
+      all
+      find_each(:batch_size)
+      
+      tail log
+
+14:10 --> How do you search based on specific fields
+      [console examples]
+      
+      String Conditions (inc SQL)
+         where =, LIKE
+      
+      Hash conditions
+         where(:locked => true)
+         where(:created_at => (Time.now.midnight - 1.day)..Time.now.midnight)
+      
+      Subset conditions
+         where(:orders_count => [1,3,5])
+         
+      Existence
+         exists?
+         where().exists?
+         
+14:15 --> How do you change the sort order?
+      order
+      
+      --> How do you limit the number of records returned?
+      limit
+      
+      --> Is there an easier way to search the database?
+      Dynamic Finders
+      
+      find_by_first_name
+      find_all_by_first_name
+      
+      Scope: handy way to reuse your conditions
+      
+      scope :current, where(["? BETWEEN arrival AND departure", DateTime.now ])
+      
+14:20 --> How can you perform Calculations on fields
+     count
+     average
+     minimum
+     maximum
+     sum
+
 14:25
 
-14:30 search for availability
+14:30 Exercise: search for availability 
 14:35 rails g controller availability -p 
-14:40
+14:40 
 14:45 
 14:50 
-14:55
-
+14:55 

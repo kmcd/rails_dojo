@@ -1,5 +1,8 @@
 11:00 intro to validations (also console)
-
+      --> What are validations ?
+      
+      --> Why do you need validations ?
+      
       During the normal operation of a Rails application, objects may be
       created, updated, and destroyed. Active Record provides hooks into this
       object life cycle so that you can control your application and its data.
@@ -8,38 +11,68 @@
       database. For example, it may be important to your application to ensure
       that every user provides a valid email address and mailing address.
 
-      presence app/models/guest.rb:  validates_presence_of :name, :passport
+      [intro to form helpers]
+
+      --> What validations are available ?
+      
+      --> Where you find documenation for validators ?
+      
+      --> When are validations run?
+      
+      --> How do you save without validating?
+      
+11:05 
+      --> How do ensure a field is not empty?
+      
+      app/models/guest.rb:  validates_presence_of :name, :passport
       app/models/reservation.rb:  validates_presence_of :occupants
       app/models/room.rb:  validates_presence_of :number, :price
 
-      uniqueness/numericality app/models/room.rb:  validates_uniqueness_of
-      :number app/models/room.rb:  validates_numericality_of :price
       
-      [move these to appropriate sections]
-      scaffold reservation
-      scaffold guest 
-      scaffold room 
-      scaffold occupancy
+      --> How do you ensure a that a field is not duplicated?
       
-      [intro to form helpers]
+      app/models/room.rb:validates_uniqueness_of :number
+        
       
-11:05 validates_acceptance_of
-11:10 validates_confirmation_of
+      [move these to appropriate sections] 
+      scaffold reservation scaffold
+      guest scaffold room scaffold occupancy
+      
+      
+11:10 --> How do you ensure that a field is in a given set?
       validates_exclusion_of
-      validates_inclusion_of
+      validates_inclusion_of 
+
+11:15 --> How do you ensure a that a field is a number ?
+      validates_numericality_of :price
+      
       validates_numericality_of
       validates_length_of
-      validates_format_of      
       
-11:15 
-11:20 
+11:20 How do you ensure that the field matches a text pattern?
+
+      validates_format_of
+      
 11:25
 
-11:30 Working with Validation Errors 
-11:35 Displaying Validation Errors in the View 
+11:30 --> How do you work with Validation Errors
+      .valid?
+      errors[:name]
+      
+11:35 How do you displaying validation Errors in the View 
+      see generator
+      
+      f.error_messages
+      
+      
 11:40 Common Validation Options
       Conditional Validation
+      
 11:45 Creating Custom Validation Methods
       start & end_date
-11:50 Callbacks
+      
+      errors.add
+      
+11:50 Callbacks 
+
 11:55

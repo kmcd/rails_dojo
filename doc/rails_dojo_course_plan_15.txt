@@ -1,36 +1,57 @@
 15:00 Intro to controllers
-      Explain routes file
-15:05 filters
-      explination
-      example
-      
-15:10 require a password to login
-      authenticate_or_request_with_http_digest              
-      USERS = { "hotel-admin" => "super-secret" }
-      
-      private
-      
-      def authenticate
-       authenticate_or_request_with_http_digest do |username|
-         USERS[username]
-       end                           
-      end
-        
-15:15 Hotel#password
-      migration
-      scaffold
 
-15:20 Public pages
-15:25 
+      --> What are controllers?
+      glue
+      Action Controller is the C in MVC. After routing has determined which controller to use for a request, your controller is responsible for making sense of the request and producing the appropriate output.
+      
+      A controller can thus be thought of as a middle man between models and views. It makes the model data available to the view so it can display that data to the user, and it saves or updates data from the user to the model.
+      
+      
+      --> What is the routes file?
+      The Rails router recognizes URLs and dispatches them to a controller’s action. It can also generate paths and URLs, avoiding the need to hardcode strings in your views.
+      Connecting URLs to Code
+      Generating Paths and URLs from Code
+      
+      Explain routes file
+      
+      resources :reservations
+      
+      Singular resource (Hotel)
+      
+      namespace (admin)
+      
+15:05 filters
+      explination example
+
+15:10 require a password to login
+      authenticate_or_request_with_http_digest USERS = { "hotel-admin" =>
+      "super-secret" }
+
+      private
+
+      def authenticate
+         authenticate_or_request_with_http_digest do |username|
+            USERS[username]
+         end                                                                 
+      end
+
+15:15 Hotel#password
+      migration scaffold
+
+15:20 Public pages 
+15:25
 
 15:30 Sending email
       [Forgot password -> locked out!]
-      
+
       Walkthrough to Generating a Mailer
-15:35 Mailer Views
-15:40 Action Mailer Layouts
+      
+15:35 Mailer Views 15:40 Action Mailer Layouts
       Generating URLs in Action Mailer Views
+      
 15:45 Test on heroku
+      send grid
+      
 15:50 
-15:55               
+15:55
 
