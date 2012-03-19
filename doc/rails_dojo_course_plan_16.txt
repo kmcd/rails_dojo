@@ -1,24 +1,40 @@
 16:00 Intro to ajax
+
+      --> How do you update a part of the page without reloaing the whole page?
+      
       JavaScript in the browser can interact behind the scenes with the
       application on the server, updating the stuff the user sees as a result.
 
-      add more guests to reservation form
+      --> What do you need to use AJAX?
+      javascipt loaded
+      docs
+      
+      --> Where can I find docs?
+      
+      --> What effects are available
+      toggle
+      page.visual_effect :highlight, 'list'
+      
+      
 16:05 
-16:10 
-16:15 guest book scaffold
-16:20 
+16:10 add more guests to reservation form
+16:15 
+16:20 guest book scaffold (extra credit)
 16:25
 
-16:30 Uploading images with paperclip
-      finding plugins/gems
+16:30 --> How do you upload an image?
+
+      Uploading images with paperclip
+      
+      --> How do you find a plugin?
       
 16:35 Add room images
 16:40 Test on heroku
 16:50 
 16:55 Wrap up
 
-      Overview of Rails concepts 
-      Overview of Rails tools 
+      Overview of Rails concepts
+      Overview of Rails tools
       what we just did
       getting help online 
       finding ruby jobs/work 

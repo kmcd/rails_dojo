@@ -1,5 +1,5 @@
 11:00 intro to validations (also console)
-      --> What are validations ?
+      --> What are validations ? 
       
       --> Why do you need validations ?
       
@@ -52,7 +52,7 @@
 11:20 How do you ensure that the field matches a text pattern?
 
       validates_format_of
-      
+
 11:25
 
 11:30 --> How do you work with Validation Errors

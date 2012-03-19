@@ -30,7 +30,6 @@
       Demo app Health & safety
 
 09:35 setup dev env
-
       --> Is your development enviroment correctly setup ?
       ruby rails
 

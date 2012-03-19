@@ -16,8 +16,14 @@
       Community
       
       --> Who else is using ROR ?
+      Basecamp
+      Twitter
+      LinkedIn
       
       --> Why is RoR so popular ?
+      Fast to market
+      Easy to use
+      Maintainable
       
 10:05 --> How do you get started with ror ?
       
@@ -46,7 +52,9 @@
       
       --> What is a scaffold ?
       
-      Rails scaffolding is a quick way to generate some of the major pieces of an application. If you want to create the models, views, and controllers for a new resource in a single operation, scaffolding is the tool for the job.
+      Rails scaffolding is a quick way to generate some of the major pieces of an application. 
+      If you want to create the models, views, and controllers for a new resource in a single 
+      operation, scaffolding is the tool for the job.
       
       --> How do you create a scaffold ?
       
@@ -94,7 +102,8 @@
       Migrations are a convenient way for you to alter your database in a
       structured and organized manner.
 
-      guides migrations rdoc column for datatypes
+      guides migrations
+      rdoc column for datatypes
 
 10:30 Intro to Ruby
 

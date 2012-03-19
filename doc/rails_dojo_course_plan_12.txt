@@ -16,8 +16,9 @@
       model, such that each instance of the declaring model “belongs to”
       one instance of the other model.
 
-      app/models/reservation.rb:  belongs_to :room app/models/occupancy.rb:
-      belongs_to :reservation app/models/occupancy.rb:  belongs_to :room
+      app/models/reservation.rb:  belongs_to :room 
+      app/models/occupancy.rb: belongs_to :reservation
+      app/models/occupancy.rb:  belongs_to :room
 
       --> What kind of associations are available ?
       
@@ -29,7 +30,7 @@
        app/models/occupancy.rb:  belongs_to :reservation
        app/models/occupancy.rb:  belongs_to :room
                                               
-12:15  has_one      
+12:15  has_one
 12:20  ONE FK on other table
 
 12:25  has_many                                             

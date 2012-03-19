@@ -6,7 +6,6 @@
       
       A controller can thus be thought of as a middle man between models and views. It makes the model data available to the view so it can display that data to the user, and it saves or updates data from the user to the model.
       
-      
       --> What is the routes file?
       The Rails router recognizes URLs and dispatches them to a controller’s action. It can also generate paths and URLs, avoiding the need to hardcode strings in your views.
       Connecting URLs to Code
@@ -20,10 +19,20 @@
       
       namespace (admin)
       
-15:05 filters
-      explination example
+15:05 --> How do you hide the manager pages?
+      
+      filters
+      Filters are methods that are run before, after or “around” a controller action.
 
-15:10 require a password to login
+      Filters are inherited, so if you set a filter on ApplicationController, it will be run on every controller in your application.
+
+      explination example
+      
+      before_filter :log
+      skip_before_filter
+
+15:10 --> How do you require a password to login
+
       authenticate_or_request_with_http_digest USERS = { "hotel-admin" =>
       "super-secret" }
 
@@ -34,24 +43,40 @@
             USERS[username]
          end                                                                 
       end
+      
+      --> Whats wrong with this picture?
 
-15:15 Hotel#password
-      migration scaffold
+15:15 --> How can we create a custom login?
 
-15:20 Public pages 
+      Hotel#password
+      migration 
+      
+      rails g controller sessions new create destroy
+
+15:20 --> How do we protect the admin pages?
+      Public pages
+      
+      SessionsController#create
+      if Hotel.first.admin_password == params[:password]
+         session[:logged_in] = true
+      
 15:25
 
-15:30 Sending email
-      [Forgot password -> locked out!]
+15:30 Forgot password, locked out!
+
+      --> How do you send an email ?
 
       Walkthrough to Generating a Mailer
       
-15:35 Mailer Views 15:40 Action Mailer Layouts
-      Generating URLs in Action Mailer Views
+      rails g mailer ReminderMailer
       
-15:45 Test on heroku
+15:35 Mailer Views
+
+15:40 Test on heroku
       send grid
+      plugin
       
+15:45 
 15:50 
 15:55
 
